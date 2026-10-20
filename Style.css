@@ -1,16 +1,149 @@
-table {
+/* Body = hela sidans bakgrund. Ljusgrå/blåaktig toning precis som Champions League-sidan */
+body
+{
+    margin: 0px;
+    background-color: #f2f4f8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Wrapper samlar innehållet och centrerar det */
+#wrapper
+{
     width: 100%;
+    margin: 0 auto;
+}
+
+/* Top = det mörkblå navigeringsfältet högst upp */
+#top
+{
+    background-color: #000cbe; /* Champions League klarblå färg */
+    height: 50px;
+    width: 100%;
+    color: #ffffff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+/* Toplinks = länkarna inuti top-fältet */
+#toplinks
+{
+    margin-left: 50px;
+}
+
+/* Alla <a>-taggar inuti top */
+#top a
+{
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+/* Gör "Table"-länken markerad med en cyan/ljusblå knapp precis som på bilden */
+#top a[href="#"]:nth-child(2)
+{
+    background-color: #00d4ff;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Hover-effekt på länkarna */
+#top a:hover
+{
+    opacity: 0.8;
+}
+
+/* Den vita kort-containern som håller innehållet under toppmenyn */
+.container
+{
     max-width: 1000px;
-    margin: 0 auto 40px auto;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 30px 40px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Cup-loggan högst upp, centrerad */
+#cupLogo
+{
+    text-align: center;
+    padding-top: 10px;
+}
+
+#cupLogo img
+{
+    width: 140px;
+    height: auto;
+}
+
+/* Rubriken "The Dominion Cup" i vänsterställd/modern stil */
+h1
+{
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #0d1b2a;
+    font-weight: bold;
+}
+
+/* Tabellinställningar */
+table
+{
+    width: 100%;
     border-collapse: collapse;
     font-size: 14px;
 }
 
-
-thead th {
-    padding: 12px 16px;
+/* Rubrikerna i tabellen (grå text och tunn linje under) */
+thead th
+{
+    padding: 12px 10px;
     text-align: center;
-    font-weight: 500;
-    color: #667085;
-    border-bottom: 2px solid #e4e7ec;
+    font-weight: normal;
+    color: #6c757d;
+    border-bottom: 2px solid #e9ecef;
+    font-size: 13px;
+}
+
+/* Vänsterjustera rubriken för lag  fick hjälp av w2schools och AI för denna  */
+thead th:nth-child(2)
+{
+    text-align: left;
+}
+
+/* Tabellcellerna */
+tbody td
+{
+    padding: 14px 10px;
+    text-align: center;
+    border-bottom: 1px solid #f1f3f5;
+    color: #212529;
+}
+
+/* Vänsterjustera lagkolumnen  fick hjälp av w2schools och AI för denna */
+tbody td:nth-child(2)
+{
+    text-align: left;
+    font-weight: 600;
+}
+
+/* Poängkolumnen i fetstil */
+tbody td:last-child
+{
+    font-weight: bold;
+}
+
+/* Gör lagloggorna runda och i lagom storlek */
+.team-logo
+{
+    width: 26px;
+    height: 26px;
+    vertical-align: middle;
+    margin-right: 12px;
+    border-radius: 50%;
 }
