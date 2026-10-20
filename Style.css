@@ -1,4 +1,10 @@
-/* Body = hela sidans bakgrund. */
+
+/*Jag fick hjälp av w2schools hur man gör detta */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body = hela sidans bakgrund.  */
 body
 {
     margin: 0px;
@@ -16,7 +22,7 @@ body
 /* Top = det mörkblå navigeringsfältet högst upp */
 #top
 {
-    background-color: #000cbe; /* Champions League klarblå färg fick hjälp av AI för att hitta exakta färgen och använde w2schools för fick några problem på dem */
+    background-color: #000cbe; /* färgen som champions league har */
     height: 50px;
     width: 100%;
     color: #ffffff;
@@ -31,6 +37,7 @@ body
     margin-left: 50px;
 }
 
+
 /* Alla <a>-taggar inuti top */
 #top a
 {
@@ -44,7 +51,7 @@ body
 }
 
 /* Gör "Table"-länken markerad med en cyan/ljusblå knapp precis som på bilden hjälp av w2schools */
-#top a[href="#"]:nth-child(2)
+#top a[href="#table-section"]:nth-child(2)
 {
     background-color: #00d4ff;
     color: #000000;
@@ -80,6 +87,7 @@ body
     width: 140px;
     height: auto;
 }
+
 
 h1
 {
@@ -124,14 +132,14 @@ tbody td
     color: #212529;
 }
 
-/* Vänsterjustera lagkolumnen  fick hjälp av w2schools och AI för denna */
+
 tbody td:nth-child(2)
 {
     text-align: left;
     font-weight: 600;
 }
 
-/* Poängkolumnen i fetstil */
+/* Poängkolumnen */
 tbody td:last-child
 {
     font-weight: bold;
