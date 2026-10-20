@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Dominion Cup</title>
     <link rel="stylesheet" href="Style.css">
+    
 </head>
 <body>
 
     <!-- Top-fältet med menylänkar -->
     <div id="top">
         <div id="toplinks">
-            <a href="#">Matches</a>
-            <a href="#">Table</a>
+            <a href="#matches">Matches</a>
+            <a href="#table-section">Table</a>
             <a href="#">TDC.tv</a>
             <a href="#">Draws</a>
             <a href="#">Gaming &#9662;</a>
@@ -20,21 +21,21 @@
             <a href="#">Teams</a>
             <a href="#">News</a>
             <a href="#">History &#9662;</a>
-            <a href="#">More &#9662;</a>
+            <a href="#rules-section">More &#9662;</a>
         </div>
     </div>
-    <!-- Fick hjälp av Gemini som förklarade att 9662 är hur man programmerar in pilar och att det är den koden för jag tyckte att det skulle se mer bättre ut -->
+    <!-- Fick hjälp av Gemini som förklarade att 9662 är hur man programmerar in pilar -->
 
     <div class="container">
         
-        <!-- Cup-loggan -->
+        <!-- Cup-loggan högst upp -->
         <div id="cupLogo">
             <img src="dominion_cup_logo.png" alt="The Dominion Cup Logo">
         </div>
 
         <h1>The Dominion Cup</h1>
 
-        <!-- Tabell för poängställningen --> 
+        <!-- Tabell för poängställningen med lagloggor -->
         <table>
             <thead>
                 <tr>
@@ -51,61 +52,61 @@
                 <tr>
                     <td>1.</td>
                     <td><img src="veyron_fc_logo.png" alt="Veyron FC" class="team-logo"> Veyron FC</td>
-                    <td>2</td>
-                    <td>2</td>
+                    <td>3</td>
+                    <td>3</td>
                     <td>0</td>
                     <td>0</td>
-                    <td>6</td>
+                    <td>9</td>
                 </tr>
                 <tr>
                     <td>2.</td>
                     <td><img src="Greyford FC_s_logo.png" alt="Greyford" class="team-logo"> Greyford</td>
+                    <td>3</td>
                     <td>2</td>
                     <td>1</td>
-                    <td>1</td>
                     <td>0</td>
-                    <td>5</td>
+                    <td>7</td>
                 </tr>
                 <tr>
                     <td>3.</td>
                     <td><img src="Crownvale fotbollsemblem med krona och boll.png" alt="Crownvale" class="team-logo"> Crownvale</td>
                     <td>3</td>
                     <td>1</td>
+                    <td>2</td>
                     <td>0</td>
-                    <td>1</td>
-                    <td>4</td>
+                    <td>5</td>
                 </tr>
                 <tr>
                     <td>4.</td>
                     <td><img src="Northvale FC – Berg och fotbollsemblem.png" alt="Northvale" class="team-logo"> Northvale</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>1</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>3</td>
                     <td>0</td>
                     <td>3</td>
                 </tr>
                 <tr>
                     <td>5.</td>
                     <td><img src="Blackridge FC – Bergskrona och fotboll crest.png" alt="Blackridge FC" class="team-logo"> Blackridge FC</td>
-                    <td>2</td>
+                    <td>3</td>
                     <td>0</td>
+                    <td>2</td>
                     <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
+                    <td>2</td>
                 </tr>
                 <tr>
                     <td>6.</td>
                     <td><img src="Valcrest FC_s alpina klubbemblem.png" alt="Valcrest" class="team-logo"> Valcrest</td>
-                    <td>6</td>
+                    <td>3</td>
                     <td>0</td>
-                    <td>0</td>
+                    <td>1</td>
                     <td>2</td>
-                    <td>0</td>
+                    <td>1</td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <!-- En footer för reglerna längst nere --> 
+    <!--Reglerna med hjälp av en ordered list i en footer-->
     <footer class="footer">
         <P>every team need to follow these 5 rules</P>
         <ol>
@@ -116,5 +117,19 @@
             <li>Every team need to play against eachother</li>
         </ol>
     </footer>
+
+    <!-- Matchresultat-sektionionen " -->
+    <section id="matches">
+        <h2>Match Results</h2>
+        <p>Veyron FC 2 - 1 Crownvale</p>
+        <p>Greyford 1 - 1 Northvale</p>
+        <p>Veyron FC 3 - 0 Valcrest</p>
+        <p>Crownvale 2 - 0 Valcrest</p>
+        <p>Veyron FC 2 - 0 Blackridge FC</p>
+        <p>Greyford 2 - 1 Blackridge FC</p>
+        <p>Greyford 2 - 0 Valcrest</p>
+        <p>Crownvale 1 - 1 Northvale</p>
+        <p>Northvale 1 - 1 Blackridge FC</p>
+    </section>
 </body>
 </html>
