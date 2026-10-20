@@ -1,4 +1,4 @@
-/* Body = hela sidans bakgrund. Ljusgrå/blåaktig toning precis som Champions League-sidan */
+/* Body = hela sidans bakgrund. */
 body
 {
     margin: 0px;
@@ -16,7 +16,7 @@ body
 /* Top = det mörkblå navigeringsfältet högst upp */
 #top
 {
-    background-color: #000cbe; /* Champions League klarblå färg */
+    background-color: #000cbe; /* Champions League klarblå färg fick hjälp av AI för att hitta exakta färgen och använde w2schools för fick några problem på dem */
     height: 50px;
     width: 100%;
     color: #ffffff;
@@ -43,7 +43,7 @@ body
     display: inline-block;
 }
 
-/* Gör "Table"-länken markerad med en cyan/ljusblå knapp precis som på bilden */
+/* Gör "Table"-länken markerad med en cyan/ljusblå knapp precis som på bilden hjälp av w2schools */
 #top a[href="#"]:nth-child(2)
 {
     background-color: #00d4ff;
@@ -81,7 +81,6 @@ body
     height: auto;
 }
 
-/* Rubriken "The Dominion Cup" i vänsterställd/modern stil */
 h1
 {
     font-size: 24px;
